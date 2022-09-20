@@ -1,6 +1,6 @@
 import re
 
-rsum = open(r'regex_sum.txt')
+rsum = open('regex_sum.txt')
 numlist = list()
 for line in rsum:
     line = line.rstrip()
