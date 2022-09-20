@@ -9,3 +9,4 @@ for line in rsum:
     for num in stuff:
         numlist.append(int(num))
 print(sum(numlist))
+
