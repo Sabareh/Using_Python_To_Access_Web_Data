@@ -1,5 +1,4 @@
 import re
-import sys
 
 rsum = open(r'regex_sum.txt')
 numlist = list()
