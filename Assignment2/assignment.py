@@ -1,7 +1,7 @@
 import re
 
 rsum = open("regex.txt")
-numlist = list()
+numlist = []
 
 for line in rsum:
     line = line.rstrip()
