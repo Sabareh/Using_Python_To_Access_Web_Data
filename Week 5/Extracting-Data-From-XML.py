@@ -12,12 +12,15 @@ import xml.etree.ElementTree as ET
 
 url = input('Enter location: ')
 print('Retrieving', url)
+
 xml = urllib.request.urlopen(url).read()
 print('Retrieved', len(xml), 'characters')
+
 tree = ET.fromstring(xml)
 counts = tree.findall('.//count')
 print('Count:', len(counts))
 sum = 0
+
 for count in counts:
     sum += int(count.text)
 print('Sum:', sum)
